@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/newPurple"
     tools:context=".MainActivity">
 
     <EditText
@@ -16,7 +17,7 @@
         android:hint="Enter #"
         android:textSize="20dp"
         android:inputType="numberDecimal"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/purple_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +31,7 @@
         android:hint="Enter #"
         android:textSize="20dp"
         android:inputType="numberDecimal"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Calculator"
         android:textSize="40dp"
-        android:textColor="@color/black"
+        android:textColor="@color/newPurple1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +58,6 @@
         android:textSize="20dp"
         android:onClick="findSum"
         app:layout_constraintBottom_toTopOf="@+id/findDiff"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -69,11 +69,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="4dp"
         android:onClick="findDiv"
         android:text="/"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toEndOf="@+id/findSum"
@@ -89,8 +87,19 @@
         android:textSize="20dp"
         android:onClick="findDiff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/findMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="316dp"
+        android:onClick="findMod"
+        android:text="%"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -109,11 +118,13 @@
         android:id="@+id/resultTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:hint="RESULTS HERE"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.603" />
 </androidx.constraintlayout.widget.ConstraintLayout>
