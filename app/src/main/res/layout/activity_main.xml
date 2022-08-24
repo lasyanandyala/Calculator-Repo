@@ -14,10 +14,11 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="112dp"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="Enter #"
-        android:textSize="20dp"
         android:inputType="numberDecimal"
         android:textColorHint="@color/purple_700"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,10 +29,11 @@
         android:layout_marginTop="112dp"
         android:layout_marginEnd="88dp"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="Enter #"
-        android:textSize="20dp"
         android:inputType="numberDecimal"
         android:textColorHint="@color/purple_700"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,9 +41,10 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="Calculator"
-        android:textSize="40dp"
         android:textColor="@color/newPurple1"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,14 +57,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="8dp"
-        android:text="+"
-        android:textSize="20dp"
+        android:background="@color/purple_200"
+        android:backgroundTintMode="add"
         android:onClick="findSum"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/findDiff"
-        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="#F4F2F2" />
 
     <Button
         android:id="@+id/findDiv"
@@ -69,6 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
+        android:background="@color/newPurple"
+        android:fontFamily="sans-serif"
         android:onClick="findDiv"
         android:text="/"
         android:textSize="20dp"
@@ -83,11 +91,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="380dp"
+        android:background="@color/newPurple"
+        android:onClick="findDiff"
         android:text="-"
         android:textSize="20dp"
-        android:onClick="findDiff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -96,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginBottom="316dp"
+        android:background="@color/newPurple"
         android:onClick="findMod"
         android:text="%"
         android:textSize="20dp"
@@ -108,9 +117,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="68dp"
+        android:background="@color/newPurple"
+        android:onClick="findMul"
         android:text="x"
         android:textSize="20dp"
-        android:onClick="findMul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/findDiv" />
 
@@ -118,13 +128,13 @@
         android:id="@+id/resultTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:hint="RESULTS HERE"
         android:textColorHint="@color/purple_500"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.639" />
 </androidx.constraintlayout.widget.ConstraintLayout>
