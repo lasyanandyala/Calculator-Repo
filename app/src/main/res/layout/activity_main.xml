@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/newPurple"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <EditText
         android:id="@+id/num1ET"
@@ -69,6 +70,7 @@
         app:layout_constraintVertical_bias="1.0"
         app:rippleColor="#F4F2F2" />
 
+
     <Button
         android:id="@+id/findDiv"
         android:layout_width="wrap_content"
@@ -102,7 +104,7 @@
         android:id="@+id/findMod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="148dp"
         android:layout_marginBottom="316dp"
         android:background="@color/newPurple"
         android:onClick="findMod"
@@ -137,4 +139,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintVertical_bias="0.639" />
+
+    <Button
+        android:id="@+id/sendNameButton"
+        android:layout_width="178dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+    android:onClick="switchScreens"
+        android:text="Button"
+        android:hint ="Pythag Calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
