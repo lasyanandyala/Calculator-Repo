@@ -2,6 +2,7 @@ package com.example.mycalculatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -103,6 +104,14 @@ public class MainActivity extends AppCompatActivity {
         }catch(Exception e){
             numberSumTV.setText("Try Again");
         }
+    }
+    public void switchScreens(View view){
+        EditText editText = findViewById(R.id.enteredName);
+        String name = editText.getText().toString();
+
+        Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("NAME",name);
+        startActivity(intent);
     }
 
 }
