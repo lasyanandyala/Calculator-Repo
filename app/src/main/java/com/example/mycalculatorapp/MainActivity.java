@@ -105,13 +105,5 @@ public class MainActivity extends AppCompatActivity {
             numberSumTV.setText("Try Again");
         }
     }
-    public void switchScreens(View view){
-        EditText editText = findViewById(R.id.enteredName);
-        String name = editText.getText().toString();
-
-        Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("NAME",name);
-        startActivity(intent);
-    }
 
 }
